@@ -19,10 +19,10 @@ export default function SelectedProduct() {
         fetchSelectedProduct();
     }, [productId])
 
-    if (!product) return <div>Loading...</div>;
+    if (!product) return <div>Loading please wait...</div>;
     return (
         <div className='product-details'>
-            <div product-details-info >
+            <div>
             <h2>{product.title}</h2>
             <br />
             <b>${product.price} </b>
